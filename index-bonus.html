@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vue hello</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+
+    <div id="title">
+        <h1>{{name}}</h1>
+
+          <div class="box" :style="'background:' + color + ';'">
+            <input v-model="color">
+          </div>
+
+          <div class="box-2" :style="'background:' + color2 + ';'">
+            <input v-model="color2">
+          </div>
+
+          <div class="box-3" :style="'background:' + color3 + ';'">
+            <input v-model="color3">
+          </div>
+    </div>
+
+
+
+
+
+    <script src="js/script-bonus.js" charset="utf-8"></script>
+  </body>
+</html>
